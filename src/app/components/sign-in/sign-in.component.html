@@ -1,24 +1,24 @@
-<h1>Naruto SHIPPUDDEN</h1>
-<table>
-  <tr>
-    <th>image</th>
-    <th>name</th>
-    <th>caracteristique</th>
-  </tr>
-  <tr>
-    <td><img src="./../assets/naruto.jpg" width="100px" /></td>
-    <td>Naruto UZUMAKI</td>
-    <td>Kyubi</td>
-  </tr>
-</table>
-<div class="redirectToLogin">
-  <a class="text-info" routerLink="/sign-in"> Log out </a>
-</div>
-<p>-----------------------------------------------------------------</p>
 <div class="displayTable bg-light">
+  <h1>Naruto SHIPPUDDEN</h1>
+  <table>
+    <tr>
+      <th>image</th>
+      <th>name</th>
+      <th>caracteristique</th>
+    </tr>
+    <tr>
+      <td><img src="./../assets/naruto.jpg" width="100px" /></td>
+      <td>Naruto UZUMAKI</td>
+      <td>Kyubi</td>
+    </tr>
+  </table>
+
+  <p>
+    ------------------------------------------------------------------------------------------
+  </p>
   <div class="displayTableCell">
     <div class="authBlock">
-      <h3>Sign In</h3>
+      <h3>Authentication</h3>
       <div class="formGroup">
         <input
           type="text"
@@ -43,7 +43,7 @@
       <div class="formGroup">
         <input
           type="button"
-          class="btn btnPrimary"
+          class="btn btnDark"
           value="Log in"
           (click)="authService.SignIn(userName.value, userPassword.value)"
         />
@@ -57,7 +57,7 @@
       <div class="formGroup">
         <button
           type="button"
-          class="btn googleBtn"
+          class="btn btnDark"
           (click)="authService.GoogleAuth()"
         >
           <i class="fab fa-google-plus-g"></i>
